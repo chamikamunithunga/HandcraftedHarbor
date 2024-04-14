@@ -1,0 +1,41 @@
+/* Reset default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-image:url("nav.jpg");
+    padding: 20px 25px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: darkorange;
+}
+
+.navbar a.active {
+    background-color: rgb(235, 144, 32);
+}
+
+/* Content area styles */
+.content {
+    padding: 20px;
+}

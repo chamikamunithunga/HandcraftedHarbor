@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#333;
+    --white:#fff;
+    --bg-color:#eee;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: black;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+
+    background: #D06047;
+    border-radius: 5px;
+}
+.btn{
+
+    background:transparent;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.btn:hover{
+    background: white;
+    color: black;
+    transition: .5s;
+}
+
+.container i{
+    font-size: 3rem;
+    margin-left: 1px;
+    background-color: transparent;
+    color: white;
+}
+.container i:hover{
+color: black;
+}
+.container{
+    max-width: 1200px;
+    padding:2rem;
+    margin:0 auto;
+}
+.container .form-control{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 60%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.product-display{
+    margin:2rem 0;
+}
+
+.product-display .product-display-table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 10px;
+}
+
+.product-display .product-display-table thead{
+    background: var(--bg-color);
+}
+
+.product-display .product-display-table th{
+    padding:1rem;
+    font-size: 2rem;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+
+
+}
+
+
+.product-display .product-display-table td{
+    padding:1rem;
+    font-size: 2rem;
+    border-bottom: var(--border);
+    color: white;
+}
+
+.product-display .product-display-table td .product_img{
+    max-width: 25rem;
+    max-height: 25rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.product-display .product-display-table td .add{
+    width: 75%;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    padding:1rem 3rem;
+    background: transparent;
+    color:var(--white);
+
+}
+.product-display .product-display-table td .add:hover{
+    background-color: #D06047;
+    transition: .5s;
+}
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .product-display{
+        overflow-y:scroll;
+    }
+
+    .product-display .product-display-table{
+        width: 80rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+
+.navbar a:hover{
+    color: #D06047;
+    transition: .5s;
+
+}
+
+
+.header .header-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+    background: black;
+}
+
+.header .header-1 .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.header .header-1 .icons div,
+.header .header-1 .icons a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.header .header-1 .icons div:hover,
+.header .header-1 .icons a:hover{
+    color: #D06047;
+}
+.header .header-1 .icons span{
+    padding:.1rem .5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color:var(--blue);
+    font-size: 2rem;
+}
+
+.header .header-1 .navigation{
+
+    font-size: 25px;
+    padding: 0 0;
+    cursor: pointer;
+
+}
+
+.header .header-1 .icons span{
+    padding:.1rem .5rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    color:black;
+    font-size: 2rem;
+}
+.message{
+    background-color: black;
+    position: sticky;
+    top:0; left:0;
+    z-index: 10000;
+    border-radius: .5rem;
+    padding:1.5rem 2rem;
+    margin:0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1.5rem;
+}
+
+.message span{
+    font-size: 2rem;
+    color:white;
+}
+
+.message i{
+    font-size: 2.5rem;
+    color:white;
+    cursor: pointer;
+}
+
+.message i:hover{
+    color:var(--red);
+}
